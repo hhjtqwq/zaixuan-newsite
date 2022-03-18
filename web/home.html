@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<title>仔轩 - 轩辕工作室</title>
+<style type="text/css">
+.style1 {
+	text-align: center;
+	font-size: xx-large;
+}
+.style3 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body ondragstart="window.event.returnValue=false;return false;" oncontextmenu="window.event.returnValue=false;return false;" onselectstart="event.returnValue=false;return false;">
+
+<div style="position: absolute; width: 100px; height: 100px; z-index: 1; left: -2px; top: 34px;" id="layer1">
+	<img src="img/biglogo.png" width="351" height="115"/></div>
+
+<p class="style1">请登录/注册</p>
+<p class="style1">即可使用本站服务</p>
+<p class="style1">&nbsp;</p>
+<div class="style3">
+<script>
+        function login()    //创建函数
+        {
+            setTimeout("javascript:location.href='./users/login.html'", 0);
+        }
+        function reg()    //创建函数
+        {
+            alert("即将前往账号注册界面，人工审核更快哦");    //弹出窗口
+            setTimeout("javascript:location.href='./users/reg.html'", 0);
+        }
+
+    </script>
+    
+<button onclick="login()" style="width: 237px; height: 120px">
+	<div class="style3">
+		登陆账号</div>
+		</button>
+		<span lang="en-us">&nbsp;</span>
+		<button onclick="reg()" style="width: 237px; height: 120px">
+	<div class="style3">
+		新用户注册</div>
+		</button>
+
+
+</div>
+
+
+<p class="style3">&nbsp;</p>
+<p class="style3">©Copyright Zaixuan™ 2021</p>
+<p class="style3">©All rights reserved by Kulipa_Server</p>
+<p class="style3">* Zaixuan™ 所有版权由Kulipa_Server代理</p>
+
+
+</body>
+
+</html>

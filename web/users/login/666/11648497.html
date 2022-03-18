@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户登录</title>
+<style type="text/css">
+.style1 {
+	font-size: 50pt;
+	text-align: center;
+}
+.style2 {
+	text-align: center;
+	font-size: xx-large;
+}
+.style3 {
+	text-align: center;
+}
+.style4 {
+	font-size: xx-large;
+}
+.style6 {
+	text-decoration: none;
+}
+.style5 {
+	color: #FF0000;
+	font-size: xx-large;
+}
+</style>
+</head>
+
+<body>
+
+<div class="style3">
+
+<p class="style1">ID : ZAIXUAN666-11648497</p>
+<p class="style2">请登录你的账号！</p>
+	<p class="style2">&nbsp;</p>
+	<span class="style4">密码：</span><input type="password" id="password" name="password" style="width: 242px; height: 29px"/> <br>
+	<br>
+<input name="a" type="submit" value="登 录" onclick="checkpassword();" style="width: 128px; height: 38px"/>
+<br>
+<script>
+function checkpassword(){
+var pwd="jiege666";
+var inpwd=document.getElementById("password").value;
+if(pwd == inpwd){ 
+window.location.href="./user_web/index.html";
+}
+else{window.alert("验证失败！请重试！");}
+}
+</script>
+
+	</div>
+	<p class="style3"><a href="../../../../index.html" class="style6">
+<span class="style5">返回首页</span></a></p>
+
+</body>
+
+</html>

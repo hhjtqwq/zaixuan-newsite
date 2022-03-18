@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>仔轩 - （轩辕工作室）| 用户协议</title>
+<style>
+
+.time1{width:100%; height:50px; background:#FFF000; line-height:50px; text-align:center;}
+
+</style>
+<script language="javascript">
+
+var t = null;
+
+t = setTimeout(time,1000);//开始执行
+
+function time()
+
+{
+
+clearTimeout(t);//清除定时器
+
+dt = new Date();
+
+var y=dt.getYear()+1900;
+
+var mm=dt.getMonth()+1;
+
+var d=dt.getDate();
+
+var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+
+var day=dt.getDay();
+
+var h=dt.getHours();
+
+var m=dt.getMinutes();
+
+var s=dt.getSeconds();
+
+if(h<10){h="0"+h;}
+
+if(m<10){m="0"+m;}
+
+if(s<10){s="0"+s;}
+
+document.getElementById("timeShow").innerHTML =  "现在的时间为："+y+"年"+mm+"月"+d+"日"+weekday[day]+"      
+
+"+h+":"+m+":"+s+"";
+
+t = setTimeout(time,1000); //设定定时器，循环执行           
+
+}
+
+</script>
+<style type="text/css">
+.style1 {
+	text-align: center;
+	font-size: xx-large;
+}
+.style2 {
+	text-align: center;
+}
+.style3 {
+	font-size: xx-large;
+}
+.style4 {
+	text-decoration: underline;
+}
+.style5 {
+	color: #FF0000;
+	font-size: x-large;
+}
+.style6 {
+	color: #FF0000;
+	font-size: large;
+}
+.style7 {
+	font-size: large;
+}
+</style>
+</head>
+
+<body class="time1">
+
+<form method="post">
+	<div class="style1">
+		仔轩 -（轩辕工作室）官方网站<br />
+		用户协议<br />
+		<span lang="zh-cn"><span class="style6">文本框右下角调整至合适尺寸，以便更好阅读协议！</span></span></div>
+</form>
+
+</body>
+ <script>
+        function hello()    //创建函数
+        {
+            alert("你已同意协议，正在为你跳转至主页！");    //弹出窗口
+            setTimeout("javascript:location.href='./loding.html'", 0);
+        }
+    </script>
+    <div style="position: absolute; width: 202px; height: 76px; z-index: 1; left: 59px; top: 211px" id="layer1" class="style5">
+		手动编辑协议无效！！！</div>
+	<textarea name="TextArea1" style="width: 793px; height: 330px">（本协议手动修改无效！）
+仔轩 - （轩辕工作室）用户协议
+*下文将简写为“仔轩”
+无论任何个人，或团体组织等，使用“仔轩”必须遵循用户协议，如有违规，我们将进行用户封号处理！（下文将简写为“用户”）
+用户协议1.0：
+作为“仔轩”用户，相互间必须保持和平友好相处，不可以辱骂其他用户，否则将以禁言/黑名单处理！
+网站/前端使用规定：
+1、任何用户不得非法获取网页源代码
+2、任何用户不得批量注册账户，否则将以滥用服务处理！
+软件使用规定：
+1、任何用户只能在有效期内使用软件/工具
+2、不得对外共享/公开“仔轩”提供软件或工具*！：否则将会永久封号处理！
+3、软件安全性已校验，请放心使用！
+
+--------------------结尾
+
+本站会尽量保持免费提供服务！
+但你必须保持活跃度，以便延期你的个人账户！
+*：详情请询问网站创办人！
+
+</textarea><div style="position: absolute; width: 100px; height: 100px; z-index: 2; left: 213px; top: 45px" id="layer2" class="style3">
+		✔</div>
+	<br />
+<span class="style3"><strong>请选择:<br />
+<span class="style4">*我已认真阅读协议，我决定：</span></strong><br />
+</span>&nbsp;
+    <button onclick="hello()" style="width: 237px; height: 120px">
+	<div class="style2">
+		同意协议</div>
+</button>
+  &nbsp;&nbsp;&nbsp;
+  <button name="Abutton1" style="width: 239px; height: 119px">不同意协议</button>
+<span class="style5">如你不同意协议，将无法使用服务。！</span><form method="post">
+<p class="style3">&nbsp;</p>
+<p class="style3">&nbsp;</p>
+<p class="style3"><span class="style7">©Copyright Zaixuan™ 2021</span></p>
+<p class="style7">©All rights reserved by Kulipa_Server</p>
+<p class="style7">* Zaixuan™ 所有版权由Kulipa_Server代理</p>
+</form>
+
+</html>
