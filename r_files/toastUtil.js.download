@@ -1,0 +1,26 @@
+var maxWarn = 0, minWarn = 1;
+
+function showToast(message, kind) {
+    var ele = document.createElement("div");
+    var container = document.getElementById("toast-container");
+    ele.classList += "toast d-flex align-items-center text-white bg-" + kind + " border-0";
+    ele.role = "alert";
+    maxWarn += 1;
+    ele.id = maxWarn.toString();
+    ele.innerHTML = "<div class=\"toast-body\">" + message + "</div>\n<button type=\"button\" class=\"btn-close btn-close-white ms-auto me-2\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>";
+    container.appendChild(ele);
+    var mytoast = new bootstrap.Toast(ele);
+    mytoast.show();
+}
+
+var timer = setInterval(function () {
+    var i, ele;
+    i = 1;
+    ele = document.getElementsByClassName("toast fade");
+    if (ele.length == 0) {
+        return;
+    }
+    for (var i in ele) {
+        ele[i].remove();
+    }
+}, 10000);

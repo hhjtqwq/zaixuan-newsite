@@ -1,0 +1,16 @@
+function disagree(){
+    alert("您不同意我们的协议，我们无法为您提供任何服务。请退出。");
+}
+
+function agree(){
+    var a = document.getElementById("terms");
+    var clientHeight = a.clientHeight;
+    var scrollHeight = a.scrollHeight;
+    var scrollTop = a.scrollTop;
+    if(Math.abs(clientHeight + scrollTop - scrollHeight) <= 10){
+        setCookie("terms", true, 10);
+        window.location.href = "switch.html";
+        return;
+    }
+    showToast("请先看完条款再确认", "danger");
+}
